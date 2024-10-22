@@ -2,10 +2,54 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hey there~</title>
+    <title>Gallery</title>
     <link href="./output.css" rel="stylesheet" />
   </head>
-  <body>
-    <p class="text-sm text-blue-400">Hello World!</p>
+  <body class="bg-sky-200">
+    <div class="flex h-16 items-center justify-around bg-white px-2">
+      <img src="./imgs/logo.svg" alt="logo" />
+      <div class="flex space-x-8 text-blue-500">
+        <a href="#" class="rounded-md hover:bg-blue-200 hover:text-blue-800"
+          >Home</a
+        >
+        <a href="#" class="rounded-md hover:bg-blue-200 hover:text-blue-800"
+          >Features</a
+        >
+        <a href="#" class="rounded-md hover:bg-blue-200 hover:text-blue-800"
+          >Community</a
+        >
+        <a href="#" class="rounded-md hover:bg-blue-200 hover:text-blue-800"
+          >Support</a
+        >
+      </div>
+      <div class="flex space-x-5">
+        <button
+          class="rounded-md border-2 border-blue-500 px-5 py-2 text-blue-400"
+        >
+          Login
+        </button>
+        <button class="rounded-md border-2 bg-blue-400 px-4 py-2 text-white">
+          Sign Up
+        </button>
+      </div>
+    </div>
+      <div class="flex h-10 w-full justify-center py-4">
+        <div class="relative flex h-10 w-3/5 items-center">
+          <img
+            src="./imgs/ic_search.svg"
+            alt="search icon"
+            class="absolute left-3"
+          />
+          <input
+            class="h-full w-full rounded-full bg-blue-300 pl-10 pr-20 outline-none"
+          />
+          <button
+            class="absolute right-0 h-full rounded-br-2xl rounded-tr-2xl border border-blue-400
+              bg-blue-500 px-4 text-blue-50"
+          >
+        Search</button>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
